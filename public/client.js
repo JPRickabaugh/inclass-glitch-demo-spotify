@@ -95,8 +95,12 @@ $(function() {
     });
     
     //Display artist's popularity value
-    var popularity = $
-
+    var popularity = $('<br><p> Popularity Value: ' + data.popularity + '</p>');
+    popularity.appendTo('#artist-container');
+    
+    //Display artist's popularity value
+    var followers = $('<p> Followers: ' + data.followers.total + '</p>');
+    followers.appendTo('#artist-container');
   });
   
   

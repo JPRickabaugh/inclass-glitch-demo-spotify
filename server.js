@@ -64,7 +64,7 @@ app.get('/category-playlists', function (request, response) {
   
   // Get playlists from a browse category
   // Find out which categories are available here: https://beta.developer.spotify.com/console/get-browse-categories/
-  spotifyApi.getPlaylistsForCategory('rock', { limit : 10 })
+  spotifyApi.getPlaylistsForCategory('metal', { limit : 10 })
     .then(function(data) {
     
     // Send the list of playlists
@@ -109,10 +109,13 @@ app.get('/artist', function (request, response) {
     });
 });
 
+
+
 app.get('/artist-top-tracks', function (request, response) {
   
   // Get an artist's top tracks in a country
-  spotifyApi.getArtistTopTracks('0LcJLqbBmaGUft1e9Mm8HV', 'SE')
+  // spotifyApi.getArtistTopTracks('0LcJLqbBmaGUft1e9Mm8HV', 'SE') //this is the artist ID for ABBA
+  spotifyApi.getArtistTopTracks('3Gs10XJ4S4OEFrMRqZJcic', 'SE') //New artist top 10: Plini. Couldn't figure out the country part for this either
     .then(function(data) {
     
       // Send the list of tracks

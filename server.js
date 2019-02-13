@@ -97,7 +97,8 @@ app.get('/audio-features', function (request, response) {
 app.get('/artist', function (request, response) {
   
   // Get information about an artist
-  spotifyApi.getArtist('6jJ0s89eD6GaHleKKya26X')
+  //spotifyApi.getArtist('6jJ0s89eD6GaHleKKya26X') original artist
+  spotifyApi.getArtist('3Gs10XJ4S4OEFrMRqZJcic') //new artist for assignment, Plini
     .then(function(data) {
     
       // Send the list of tracks

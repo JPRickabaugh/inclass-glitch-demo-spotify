@@ -78,7 +78,7 @@ $(function() {
     console.group('%cResponse from /artist', 'color: #F037A5; font-size: large');
     console.log(data);
     console.groupEnd();
-    
+        
     // Display the artist's image
     var img = $('<img class="circle-image" />');
     img.attr('src', data.images[0].url);
@@ -93,7 +93,13 @@ $(function() {
       var genreItem = $('<p>' + genre + '</p>');
       genreItem.appendTo('#artist-container');
     });
+    
+    //Display artist's popularity value
+    var popularity = $
+
   });
+  
+  
   
   $.get('/artist-top-tracks', function(data) {
     // "Data" is the object we get from the API. See server.js for the function that returns it.

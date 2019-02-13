@@ -74,11 +74,13 @@ app.get('/category-playlists', function (request, response) {
     console.error(err);
   });
 });
+//couldn't figure out how to get different country's playlists
+
 
 app.get('/audio-features', function (request, response) {
   
   // Get the audio features for a track ID
-  spotifyApi.getAudioFeaturesForTrack('4uLU6hMCjMI75M1A2tKUQC')
+  spotifyApi.getAudioFeaturesForTrack('4uLU6hMCjMI75M1A2tKUQC') //this is the ID for "Never Gonna Give You Up" by Rick Astley. Sneaky.
     .then(function(data) {
     
       //Send the audio features object
@@ -88,6 +90,8 @@ app.get('/audio-features', function (request, response) {
       console.error(err);
     });
 });
+
+
 
 app.get('/artist', function (request, response) {
   

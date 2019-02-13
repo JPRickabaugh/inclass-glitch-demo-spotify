@@ -80,7 +80,8 @@ app.get('/category-playlists', function (request, response) {
 app.get('/audio-features', function (request, response) {
   
   // Get the audio features for a track ID
-  spotifyApi.getAudioFeaturesForTrack('4uLU6hMCjMI75M1A2tKUQC') //this is the ID for "Never Gonna Give You Up" by Rick Astley. Sneaky.
+  //spotifyApi.getAudioFeaturesForTrack('4uLU6hMCjMI75M1A2tKUQC') //this is the ID for "Never Gonna Give You Up" by Rick Astley. Sneaky.
+  spotifyApi.getAudioFeaturesForTrack('1vcxF91pWs9uNwDROuiCPB') //This is the ID for a new song: "Savior" by Rise Against
     .then(function(data) {
     
       //Send the audio features object
